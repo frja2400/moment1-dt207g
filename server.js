@@ -32,6 +32,14 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
+app.get("/courses", (req, res)=> {
+    res.render("courses");
+});
+
+app.get("/about", (req, res)=> {
+    res.render("about");
+});
+
 //starta servern
 app.listen(process.env.PORT, ()=> {
     console.log("Servern startad på port: " + process.env.PORT);

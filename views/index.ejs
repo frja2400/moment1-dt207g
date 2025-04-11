@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Moment 1 - DT207G</title>
 </head>
+
 <body>
-    <h1>TEST</h1>
+    <header>
+        <header>
+            <%- include("partials/mainnav") %>
+        </header>
+    </header>
+    <main>
+        <h2>Kurslistan:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Kurskod</th>
+                    <th>Kursnamn</th>
+                    <th>Progression</th>
+                    <th>URL till kursplanen</th>
+                </tr>
+            </thead>
+            <tbody id="courseList">
+            </tbody>
+        </table>
+    </main>
 </body>
+
 </html>
